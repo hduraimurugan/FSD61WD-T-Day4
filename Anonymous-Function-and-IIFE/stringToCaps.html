@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Strings to title caps in a string array</title>
+      <script>
+        var arr = ["hello", "test", "javascript", "awesome"];
+
+    var fun = function(str) {
+                             return str.replace(/\w\S*/g, function(txt) {
+                            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                                                                        });
+                              }
+
+                             var newArr = arr.map(fun);
+                             console.log(newArr);
+
+(function(arr) {
+    const newArr = arr.map(function(str) {
+        return str.replace(/\w\S*/g, function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    });
+
+    console.log(newArr);
+})(['hello world', 'this is a test', 'javascript is fun']);
+
+
+      </script>
+    </head>
+    <body>
+    </body>
+    </html

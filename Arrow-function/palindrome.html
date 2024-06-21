@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>All the palindromes in an array</title>
+      <script>
+       var words = ["madam", "racecar", "apple", "level", "banana", "rotor"];
+
+        var palindromes = words.filter((word)=> {
+        return word === word.split('').reverse().join('');
+         });
+         console.log(palindromes);
+
+       </script>
+    </head>
+    <body>
+    </body>
+    </html>

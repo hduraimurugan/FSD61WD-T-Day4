@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Print odd numbers in an array</title>
+      <script>
+      
+        var fun= function(val)
+        {
+        var arr=[];
+        for(var i=1;i<=val;i=i+2)
+        {
+            arr.push(i);
+        } return arr;
+        }
+        console.log(fun(100));
+
+        (function(val){
+        var arr=[];
+        for(var i=1;i<=val;i=i+2)
+        {
+            arr.push(i);
+        } return arr;
+        })
+        (console.log(fun(100)))
+
+      </script>
+    </head>
+    <body>
+    </body>
+    </html>
